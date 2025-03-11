@@ -1,0 +1,251 @@
+/* Base Styles */
+body {
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    background-color: #e0d9b0; /* Parchment-like background */
+    background-image: url('https://www.transparenttextures.com/patterns/old-map.png'); /* Subtle background texture */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-top: 50px;
+    border: 5px solid #6A4E3D;
+    margin-bottom: 50px;
+}
+
+.container h1 {
+    font-size: 3em;
+}
+
+/* Header */
+h1 {
+    font-family: 'Garamond', serif;
+    font-size: 4em;
+    color: #6A4E3D;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+/* Question Styling */
+#question {
+    font-size: 1.4em;
+    color: #6A4E3D;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px 30px;
+    border: 3px solid #6A4E3D; 
+    background-color: #D4C2A8;
+    color: #333;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 0.3s all ease;
+    font-family: 'Garamond', serif;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #C2A97F; 
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.7); 
+    transform: scale(1.05);
+}
+
+/* House-Themed Button Colors */
+button.gryffindor { background-color: #9C1C2C; color: white; }
+button.hufflepuff { background-color: #F0C75E; color: black; }
+button.ravenclaw { background-color: #0E1A47; color: white; }
+button.slytherin { background-color: #1A472A; color: white; }
+
+/* House-Themed Hover Effects */
+button.gryffindor:hover { background-color: #7A1420; box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7); }
+button.hufflepuff:hover { background-color: #D4A52E; box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.7); }
+button.ravenclaw:hover { background-color: #09102B; box-shadow: 0px 0px 15px rgba(0, 0, 255, 0.7); }
+button.slytherin:hover { background-color: #10321A; box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.7); }
+
+/* When Next Button is Disabled */
+button:disabled {
+    background-color: #ccc;
+    border-color: #999;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Result Text */
+#result {
+    font-size: 1.6em;
+    font-family: 'Garamond', serif;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #6A4E3D;
+    animation: sparkle 2s infinite;
+}
+
+/* Spacing and padding to options */
+#options {
+    margin-bottom: 20px;
+}
+
+/* Optional: Add subtle animations or effects */
+@keyframes sparkle {
+    0% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.5; }
+}
+
+/* Sparkle effect for the result */
+#result {
+    animation: sparkle 2s infinite; 
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Works Cited Section */
+#works-cited {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Garamond', serif;
+    color: #6A4E3D;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    border-top: 2px solid #6A4E3D;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: 0;
+}
+
+/* Links in Works Cited */
+#works-cited a {
+    color: #9C1C2C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#works-cited a:hover {
+    text-decoration: underline;
+}
+
+.centered-img {
+    width: 50%;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+#intro h2 {
+    text-align: left;
+    margin-left: 365px;
+    font-size: 2em;
+    color: #6A4E3D;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#intro p {
+    text-align: left;
+    margin-left: 380px;
+    line-height: 0.5;
+}
+
+#how h2 {
+    text-align: left;
+    margin-left: 365px;
+    font-size: 2em;
+    color: #6A4E3D;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#how li {
+    text-align: left;
+    margin-left: 340px;
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+#sorting-hat-algorithm h2 {
+    text-align: left;
+    margin-left: 365px;
+    font-size: 2em;
+    color: #6A4E3D;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#sorting-hat-algorithm p {
+    text-align: left;
+    margin-left: 380px;
+    line-height: 0.5;
+}
+
+#different-algorithms h2 {
+    text-align: left;
+    margin-left: 365px;
+    font-size: 2em;
+    color: #6A4E3D;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#different-algorithms p {
+    text-align: left;
+    margin-left: 380px;
+    line-height: 0.5;
+}
+
+button.selected {
+    background-color: #FFD700 !important;
+    color: #000 !important;
+    border: 2px solid #6A4E3D;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.ex-img {
+    width: 70%;
+    max-width: 2000px;
+    display: block;
+    margin: 0 auto;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#image-container img {
+    width: 70%;
+    max-width: 400px;
+}
+
+.sorting-hat4 {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+body h3 {
+    margin-top: 10px;
+    line-height: 0;
+}
